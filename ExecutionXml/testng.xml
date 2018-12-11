@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+  <test thread-count="5" verbose="2" name="Default test">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="url" value="https://www.freecrm.com/index.html"></parameter>
+    <classes>
+      <class name="tests.Companies">
+      <methods>
+      	<include name="create_new_company"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
+            
